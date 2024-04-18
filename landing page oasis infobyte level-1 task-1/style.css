@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./pizza2.png);
+    background-size: 50% 90%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: relative;
+}
+.nav{
+    width: 100vw;
+    height: 70px;
+    padding: 0px 70px;
+    /* background: white; */
+    /* color: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 5px grey;
+}
+.logo{
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.logo span{
+    color: brown;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+    padding: 9px 20px;
+    position: relative;
+}
+.link a:before{
+   content:'';
+   position: absolute;
+    top: 0.4em;
+    right: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    border-bottom: .5px solid indianred;
+    transition: 0.4s ease;
+}
+.link a:hover::before{
+    width: 88%;
+}
+.link a:last-child{
+    background-color: brown;
+    color: white;
+    border-radius: 8px;
+    
+}
+.text{
+    position: absolute;
+    top:30%;
+    left: 5%;
+    padding: 15px;
+}
+.text p{
+    color: #262626;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.text h1{
+    font-size: 4em;
+    line-height: 1.5em;
+}
+.text h1 span{
+    color: brown;
+}
+.text h2{
+    font-size: 4em;
+    margin-bottom: 0.5rem;
+}
+#order{
+    text-decoration: none;
+    background: brown;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+#dis{
+    text-decoration: none;
+    color: white;
+    background: #262626;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.pizza{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+.pizza img{
+    width: 100px;
+    transition: 0.4s ease;
+}
+.pizza img:hover{
+    transform: translateY(-20%);
+}
